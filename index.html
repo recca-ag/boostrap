@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bai Tap Bootstrap</title>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- BS4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- FONT Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- OWL CAROUSEL -->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <!-- Main Css -->
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header__contact container-fluid">
+      <div class="row text-white">
+        <div class="col-md-7 header__left text-center text-md-left pt-1">
+          <i class="fas fa-phone-alt"></i>
+          <span> +456 123 7890</span>
+
+          <i class="far fa-envelope"></i>
+          <span><a href="#">info@example.com</a></span>
+        </div>
+
+        <div class="col-md-5 header__right text-center text-md-right mt-2 mt-md-0">
+          <div>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-linkedin-in"></i>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container header__navbar">
+      <nav class="movieNavbar navbar navbar-expand-md navbar-light">
+        <div>
+          <a class="navbar-brand py-0" href="#">
+            <i class="fa fa-book">
+            </i>INSTRUCTION
+          </a>
+          <p>EDUCATION</p>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="movieNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GALLERY</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                PAGES
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item px-0" href="#">Code</a>
+                <a class="dropdown-item px-0" href="#">Icon</a>
+
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">CONTACT</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+  <!-- END HEADER -->
+  <!-- CAROUSEL -->
+  <section class="myCarousel">
+    <div id="movieSider" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#movieSider" data-slide-to="0" class="active"></li>
+        <li data-target="#movieSider" data-slide-to="1"></li>
+        <li data-target="#movieSider" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="img-fluid" src="./img/banner1.jpg" alt="">
+          <div class="overlay"></div>
+
+          <div class="carousel-caption d-block">
+            <h5>Graphic Work <span>Designing</span></h5>
+            <p>Any successful career starts with good education. Together with us you will have deeper knowledge of the
+              subjects</p>
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Read more »</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="img-fluid" src="./img/banner2.jpg" alt="">
+          <div class="overlay"></div>
+
+          <div class="carousel-caption d-block">
+            <h5>Financial Analyst <span>Course.</span></h5>
+            <p>Any successful career starts with good education. Together with us you will have deeper knowledge of the
+              subjects</p>
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Read more »</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="img-fluid" src="./img/banner3.jpg" alt="">
+          <div class="overlay"></div>
+
+          <div class="carousel-caption d-block">
+            <h5>Financial Analyst <span>Course.</span></h5>
+            <p>Any successful career starts with good education. Together with us you will have deeper knowledge of the
+              subjects</p>
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Read more »</button>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#movieSider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#movieSider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <!-- END CAROUSEL -->
+  <!-- INTRO -->
+  <section class="myintro">
+    <div class="container">
+      <div class="row">
+        <div class="col intro_content">
+          <h3>WELCOME TO EDUCATION</h3>
+
+          <span>When Climbing The Carrer Ladder</span>
+          <div class="over_lay mx-auto mt-3 mb-3 mb-sm-5"></div>
+          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, sunt in culpa
+            qui
+            officia deserunt mollit anim id est laboth. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur sunt in culpa qui .</p>
+        </div>
+      </div>
+      <div class="row card-group mx-0 my-0 p-0 card-group--top">
+
+        <div class="col-sm card border-dark p-0 p-md-1 p-lg-2">
+          <div class="card-body intro--card">
+            <i class="fa fa-desktop"></i>
+            <h4>Design Course</h4>
+            <h5>FASHION DESIGN</h5>
+            <p>Ncididunt ut labore et t enim ad minim.</p>
+            <h5>INTERIOR DESIGN
+            </h5>
+            <p>Ncididunt ut labore et t enim ad minim.</p>
+            <h5>GRAPHIC DESIGN</h5>
+            <p>Ncididunt ut labore et t enim ad minim.</p>
+          </div>
+        </div>
+        <div class="col-sm card border-dark p-2">
+          <div class="card-body intro--card">
+            <i class="fa fa-arrows-alt"></i>
+            <h4>Marketing Course</h4>
+            <h5>FACEBOOK MARKETING</h5>
+            <p>Ncididunt ut labore et t enim ad minim.</p>
+            <h5>YOUTUBE MARKETING
+            </h5>
+            <p>Ncididunt ut labore et t enim ad minim.</p>
+            <h5>TWITTER MARKETING</h5>
+            <p>Ncididunt ut labore et t enim ad minim.</p>
+          </div>
+        </div>
+        <div class="col-sm card border-dark p-2">
+          <div class="card-body intro--card">
+            <i class="fa fa-chart-bar"></i>
+            <h4>Financial Course</h4>
+            <h5>COMPLEXITIES OF BANKING</h5>
+            <p>Ncididunt ut labore et t enim ad minim.</p>
+            <h5>COMPLIANCE REGULATIONS
+            </h5>
+            <p>Ncididunt ut labore et t enim ad minim.</p>
+            <h5>FINANCE PRODUCTS</h5>
+            <p>Ncididunt ut labore et t enim ad minim.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- END INTRO -->
+
+  <!-- OUR START -->
+  <section class="ourstats">
+    <div class="container text-center text-white">
+      <div class="row">
+        <div class="col">
+          <h3>
+            OUR STATS
+          </h3>
+          <span>When Climbing The Carrer Ladder</span>
+          <div class="over_lay mx-auto mt-3 mb-3 mb-sm-5"></div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0">
+          <i class="fa fa-graduation-cap"></i>
+          <h4>Graduates</h4>
+          <p class="counter">45</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0">
+          <i class="fa fa-user"></i>
+          <h4>Certified Staff</h4>
+          <p class="counter">165</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0">
+          <i class="fa fa-users"></i>
+          <h4>Student</h4>
+          <p class="counter">563</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0">
+          <i class="fa fa-trophy"></i>
+          <h4>Awardss</h4>
+          <p class="counter">245</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END OUR STAR -->
+  <!-- OFFER -->
+  <section class="offer">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h3>WHAT WE OFFER</h3>
+          <span>When Climbing The Carrer Ladder</span>
+          <div class="over_lay mx-auto mt-3 mb-3 mb-sm-5"></div>
+          <div class="row ">
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="offer__item">
+                <i class="fa fa-graduation-cap"></i>
+                <h4>UNDERGRADUATE STUDY</h4>
+                <p>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="offer__item">
+                <i class="fa fa-book"></i>
+                <h4>PROFESSIONAL STUDY</h4>
+                <p>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="offer__item">
+                <i class="fa fa-tasks"></i>
+                <h4>PROGRAMS</h4>
+                <p>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="offer__item">
+                <i class="fa fa-comment"></i>
+                <h4>ONLINE LEARNING</h4>
+                <p>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="offer__item">
+                <i class="fa fa-bookmark"></i>
+                <h4>SUMMER SESSION</h4>
+                <p>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="offer__item">
+                <i class="fa fa-globe-americas"></i>
+                <h4>GLOBAL EDUCATION</h4>
+                <p>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END OFFER -->
+  <!-- FEEDBACK -->
+  <section class="myFeedback">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h3>TESTIMONIALS</h3>
+          <span>When Climbing The Carrer Ladder</span>
+          <div class="over_lay mx-auto mt-3 mb-3 mb-sm-5"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col feedback__content">
+
+          <div class="owl-carousel owl-theme owl-theme--pink">
+            <div class="item">
+              <div class="item__text">
+                <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="item__user">
+                <img src="./img/test1.jpg" alt="">
+                <p>Wilson</p>
+                <span>Vestibulum</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__text">
+                <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="item__user">
+                <img src="./img/test2.jpg" alt="">
+                <p>Guptil</p>
+                <span>Vestibulum</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__text">
+                <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="item__user">
+                <img src="./img/test3.jpg" alt="">
+                <p>Marry Jane</p>
+                <span>Vestibulum</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__text">
+                <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="item__user">
+                <img src="./img/test2.jpg" alt="">
+                <p>Steven</p>
+                <span>Vestibulum</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__text">
+                <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="item__user">
+                <img src="./img/test1.jpg" alt="">
+                <p>Peter</p>
+                <span>Vestibulum</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__text">
+                <p> Sed semper leo metus, a lacinia eros semper at. Etiam sodales orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="item__user">
+                <img src="./img/test3.jpg" alt="">
+                <p>Wilson</p>
+                <span>Vestibulum</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- END FEEDBACK -->
+  <!-- EVENTS -->
+  <section class="container newEvents">
+    <div class="row text-center">
+      <div class="col">
+        <h3>NEWS & EVENTS</h3>
+        <span>Exclusive Holidays For Any Travelers</span>
+        <div class="over_lay mx-auto mt-3 mb-3 mb-sm-5"></div>
+      </div>
+    </div>
+    <div class="row text__content">
+      <div class="col-12 col-sm-5">
+        <img src="./img/g7.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="col-12 col-sm-7 px-4">
+        <h4><a href="" data-toggle="modal" data-target="#exampleModal">SIT AMET JUSTO VITAE</a></h4>
+        <span>3/01/2018</span>
+        <p>Proin euismod vehicula vestibulum. Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus, facilisis non
+          cursus ut, egestas sed ipsum.Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus, facilisis non cursus
+          ut, egestas sed ipsum.Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus, facilisis non cursus ut,
+          egestas sed ipsum.</p>
+      </div>
+
+      <div class="event_overlay"></div>
+
+      <div class="col-12 col-sm-7 px-4">
+        <h4><a href="" data-toggle="modal" data-target="#exampleModal">FUSCE SCELERISQUE</a></h4>
+        <span>5/01/2018</span>
+        <p>Proin euismod vehicula vestibulum. Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus, facilisis non
+          cursus ut, egestas sed ipsum.Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus, facilisis non cursus
+          ut, egestas sed ipsum.Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus, facilisis non cursus ut,
+          egestas sed ipsum.</p>
+      </div>
+      <div class="col-12 col-sm-5">
+        <img src="./img/g10.jpg" class="img-fluid" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- END EVENT -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__contact ">
+      <div class="container">
+        <div class="row pb-4">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h4>About Us</h4>
+            <p>Nam libero tempore cum vulputate id est id, pretium semper enim. Morbi viverra congue nisi vel pulvinar
+              posuere sapien eros.</p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0 footer__icon">
+            <h4>About Us</h4>
+            <p><a href="" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-long-arrow-alt-right"></i>
+                Lorem ipsum neque vulputate</a></p>
+            <p><a href="" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-long-arrow-alt-right"></i>
+                Dolor amet sed quam vitae</a></p>
+            <p><a href="" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-long-arrow-alt-right"></i>
+                Lorem ipsum neque vulputate</a></p>
+            <p><a href="" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-long-arrow-alt-right"></i>
+                Dolor amet sed quam vitae</a></p>
+            <p><a href="" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-long-arrow-alt-right"></i>
+                Lorem ipsum neque vulputate</a></p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0 footer__face">
+            <h4>Contact Info</h4>
+            <p><i class="fa fa-map-marker-alt"></i> 8088 USA, Honey block,
+              <br><span> New York City.</span></p>
+            <p><i class="fa fa-envelope"></i> info@example.com</p>
+            <p><i class="fas fa-phone-alt"></i> +09187 8088 9436</p>
+          </div>
+        </div>
+        <div class="row footer__form">
+          <div class="col-md-4 ">
+            <h4 class="text-left text-md-right ">Sign up for our Newsletter</h4>
+          </div>
+          <div class="col-md-8">
+            <form action="" method="POST">
+              <input type="email" name="Email" placeholder="Enter Email Address...">
+              <button>SUBMIT</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer__name">
+      <p>© 2018 Instruction. All rights reserved | Design by <span>W3layouts</span></p>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">INSTRUCTION</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/g12.jpg" alt="" class="img-fluid">
+          <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget
+            nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque
+            tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus
+            ultrices ullamcorper. Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor
+            sed tristique. Proin sed finibus sem</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- THƯ VIỆN HỖ TRỢ jquery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <!-- BS4 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <!-- COUNT UP JS -->
+  <script src="./js/jquery.countup.js"></script>
+  <script>
+    $('.counter').countUp();
+  </script>
+  <!-- OWL CAROUSEL JS -->
+  <script src="./js/owl.carousel.min.js"></script>
+  <script>$('.owl-carousel').owlCarousel({
+      // loop ví dụ đang ở item thứ 3 nó sẽ lặp lại nếu là true
+      loop: true,
+      // khoảng cách giữa 2 items
+      margin: 10,
+      nav: false,
+      // chỉnh cho tự động chạy
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      // hiển thị tùy theo kích thước màn hình, các vùng kích thước màn hình
+      responsive: {
+        0: {
+          items: 1,
+
+        },
+        600: {
+          items: 2,
+
+        },
+        1000: {
+          items: 3,
+
+
+        }
+      }
+    })</script>
+</body>
+
+</html>
